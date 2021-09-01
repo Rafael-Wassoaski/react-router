@@ -1,6 +1,7 @@
 import React from "react";
-import image from '../img/doguito.svg';
-import css from '../css/componentes/cabecalho.css';
+import image from '../assets/img/doguito.svg';
+import css from '../assets/css/componentes/cabecalho.css';
+import {Link} from "react-router-dom";
 
 const Cabecalho = () => {
     return (
@@ -18,16 +19,16 @@ const Cabecalho = () => {
             <nav className='menu-cabecalho'>
                 <ul className='menu-itens'>
                     <li>
-                        <a href='#' className='menu-itens menu-item--entrar'>Entrar</a>
+                        <Link to='#' className='menu-itens menu-item--entrar'>Entrar</Link>
                     </li>
                     <li>
-                        <a href='#' className='menu-itens'>Produtos</a>
+                        <Link to='#' className='menu-itens'>Produtos</Link>
                     </li>
                     <li>
-                        <a href='/' className='menu-itens'>Blog</a>
+                        <Link to='/' className='menu-itens'>Blog</Link>
                     </li>
                     <li>
-                        <a href='/sobre' className='menu-itens'>Sobre</a>
+                        <Link to='/sobre' className='menu-itens'>Sobre</Link>
                     </li>
                 </ul>
             </nav>
